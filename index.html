@@ -12,9 +12,9 @@
 
 <body>
     <header class="head">
-        <a id=leaderboard>View Highscores <i class="fas fa-hand-point-left fa-lg"></i>
-            </i></a>
-        <span id="time">Time: 50</span>
+        <span id=leaderboard style="cursor: pointer;">View Highscores <i class="fas fa-hand-point-left fa-lg"></i>
+            </i></span>
+        <span class="time">Time: <p id="time"></p></span>
     </header>
 
     <!-- <button id="testBTN">test production</button> -->
@@ -29,7 +29,7 @@
             Keep in mind that incorrect answers will penalize your score/time by ten seconds!
         </p>
 
-        <button class="btn" onclick="startBtnFun()">Start Quiz </button>
+        <button id="btn" class="btn">Start Quiz </button>
     </main>
 
     <main id="container2">
@@ -42,7 +42,9 @@
         <span id="q13" class="options">3. alerts</span>
         <span id="q14" class="options">4. numbers</span>
 
-        <h4 id="ans"></h4>
+        <h4 id="ans1"></h4>
+
+        <button class="btnFn" onclick="nextFun1()">Next</button>
     </main>
 
     <main id="container3">
@@ -50,12 +52,14 @@
 
         <br>
 
-        <span class="options">1. numbers and strings</span>
-        <span class="options">2. other arrays</span>
-        <span class="options">3. booleans</span>
-        <span class="options">4. all of the above</span>
+        <span id="q21" class="options">1. numbers and strings</span>
+        <span id="q22" class="options">2. other arrays</span>
+        <span id="q23" class="options">3. booleans</span>
+        <span id="q24" class="options">4. all of the above</span>
 
-        <h4 id="ans"></h4>
+        <h4 id="ans2"></h4>
+
+        <button class="btnFn" onclick="nextFun2()">Next</button>
     </main>
 
     <main id="container4">
@@ -63,12 +67,14 @@
 
         <br>
 
-        <span class="options">1. commas</span>
-        <span class="options">2. curly brackets</span>
-        <span class="options">3. quotes</span>
-        <span class="options">4. parentheses</span>
+        <span id="q31" class="options">1. commas</span>
+        <span id="q32" class="options">2. curly brackets</span>
+        <span id="q33" class="options">3. quotes</span>
+        <span id="q34" class="options">4. parentheses</span>
 
-        <h4 id="ans"></h4>
+        <h4 id="ans3"></h4>
+
+        <button class="btnFn" onclick="nextFun3()">Next</button>
     </main>
 
     <main id="container5">
@@ -77,12 +83,14 @@
 
         <br>
 
-        <span class="options">1. JavaScript</span>
-        <span class="options">2. terminal/bash</span>
-        <span class="options">3. for loops</span>
-        <span class="options">4. console.log</span>
+        <span id="q41" class="options">1. JavaScript</span>
+        <span id="q42" class="options">2. terminal/bash</span>
+        <span id="q43" class="options">3. for loops</span>
+        <span id="q44" class="options">4. console.log</span>
 
-        <h4 id="ans"></h4>
+        <h4 id="ans4"></h4>
+
+        <button class="btnFn" onclick="nextFun4()">Next</button>
     </main>
 
     <main id="container6">
@@ -91,12 +99,14 @@
 
         <br>
 
-        <span class="options">1. break</span>
-        <span class="options">2. stop</span>
-        <span class="options">3. halt</span>
-        <span class="options">4. exit</span>
+        <span id="q51" class="options">1. break</span>
+        <span id="q52" class="options">2. stop</span>
+        <span id="q53" class="options">3. halt</span>
+        <span id="q54" class="options">4. exit</span>
 
-        <h4 id="ans"></h4>
+        <h4 id="ans5"></h4>
+
+        <button id="btn5" class="btnFn" onclick="nextFun5()">Next</button>
     </main>
 
     <main id="done">
@@ -104,12 +114,12 @@
 
         <br>
 
-        <p id="ScoreLine">Your final score is  .</p>
+        <p id="ScoreLine"></p>
 
         <br>
 
         <div class="inputholder">
-            <label for="input">Enter Initials:</label>
+            <label for="#input">Enter Initials:</label>
             <input type="text" id="input" required name="input">
             <input id="submit" class="btn" type="button" value="submit">
         </div>
@@ -127,9 +137,9 @@
         <br>
 
         <div class="btnholder">
-            <button class="btn"  id="back">Go Back</button>
+            <button class="btn"  id="back" onclick="goBack()">Go Back</button>
 
-            <button class="btn" id="clear">Clear Highscores</button>
+            <button class="btn" id="clear" onclick="clearHighscores()">Clear Highscores</button>
         </div>
     </main>
     <script src="script.js"></script>

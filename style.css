@@ -23,6 +23,7 @@
 }
 #container1{
     /* display: none; */
+    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -31,6 +32,7 @@
     box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
     border-radius: 10px;
     padding: 50px;
+
 }
 
 #container2{
@@ -129,6 +131,21 @@
     background-color: #175553;
 }
 
+.btnFn{
+    border: #218380;
+    background-color: #218380;
+    padding: 12px;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 7px;
+    text-align: center;
+    margin-right: 10px;
+    width: 100px;
+}
+.btnFn:hover{
+    background-color: #175553;
+}
+
 #high{
     display: none;
     /* display: flex; */
@@ -163,4 +180,7 @@
     border:1px solid black;
     height: 25px;
     padding-left: 5px;
+}
+.time{
+    display: flex;
 }
