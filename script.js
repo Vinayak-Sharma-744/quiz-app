@@ -311,8 +311,8 @@ function displayTotalScore (){
     // updateTime()
     totalScore.innerText = `Your final score is: ${points}`
 }
-back.addEventListener('click', start)
-start();
+// back.addEventListener('click', start)
+// start();
 
 // back.addEventListener('click', reset);
 // function reset(){

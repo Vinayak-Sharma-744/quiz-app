@@ -20,7 +20,29 @@
     background-color: #218380;
     color: #fff;
     height: 50px;
+    margin-bottom: 20px;
 }
+.heading{
+    font-size: 15px;
+} 
+
+.options{
+    font-size: 12px;
+}
+
+/* #container2, #container3, #container4, #container5, #container6{
+    padding-top: 20px;
+    /* font-size: 1.5vw; */
+    /* position: absolute;
+    top: 60%; */
+/* } */
+
+/* @media screen and (max-width: 580px) {
+    #container1, #container2, #container3, #container4, #container5, #container1{
+        margin-top: 25px;
+    }
+  } */
+
 #container1{
     /* display: none; */
     display: block;
@@ -32,6 +54,7 @@
     box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
     border-radius: 10px;
     padding: 50px;
+    /* height: auto; */
 
 }
 
@@ -46,7 +69,8 @@
     max-width: 1000px;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
     border-radius: 10px;
-    padding: 40px;
+    padding: 20px 50px;
+    /* height: auto; */
 }
 #container3{
     display: none;
@@ -59,7 +83,7 @@
     max-width: 1000px;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
     border-radius: 10px;
-    padding: 40px;
+    padding: 20px 50px;
 }
 #container4{
     display: none;
@@ -72,7 +96,7 @@
     max-width: 1000px;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
     border-radius: 10px;
-    padding: 40px;
+    padding: 20px 50px;
 }
 #container5{
     display: none;
@@ -85,7 +109,7 @@
     max-width: 1000px;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
     border-radius: 10px;
-    padding: 40px;
+    padding: 20px 50px;
 }
 
 #container6{
@@ -99,7 +123,7 @@
     max-width: 1000px;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
     border-radius: 10px;
-    padding: 40px;
+    padding: 20px 50px;
 }
 .options{
     background-color: #218380;
