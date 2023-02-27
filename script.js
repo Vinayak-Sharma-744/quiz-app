@@ -197,7 +197,7 @@ function nextFun4() {
 function nextFun5() {
     cont5.style.display = "none"
     cont6.style.display = "flex"
-    timeLeft = 0
+    timer = 0
 }
 
 submit.addEventListener('click', next)
