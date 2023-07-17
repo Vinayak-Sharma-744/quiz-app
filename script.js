@@ -83,12 +83,12 @@ q54.addEventListener('click', wrong5)
 function wrong1() {
     console.log("wrong!")
     ans1.innerHTML = "Wrong Answer !"
-    timer-=10
+    timer -= 10
     // if (timeLeft <= 50) {
     //     console.log("timer check")
     //     timeLeft = timeLeft-10
     // }
-    
+
 }
 
 function correct1() {
@@ -103,7 +103,7 @@ function correct1() {
 function wrong2() {
     console.log("wrong!")
     ans2.innerHTML = "Wrong Answer !"
-    timer-=10
+    timer -= 10
 
 }
 
@@ -112,7 +112,7 @@ function correct2() {
     ans2.innerHTML = "Correct Answer !"
     points = points + 10
     // clearans2()
-   
+
 }
 
 //3
@@ -120,8 +120,8 @@ function wrong3() {
     console.log("wrong!")
     ans3.innerHTML = "Wrong Answer !"
     // clearans3()
-    timer-=10
- 
+    timer -= 10
+
 }
 
 function correct3() {
@@ -137,7 +137,7 @@ function wrong4() {
     console.log("wrong!")
     ans4.innerHTML = "Wrong Answer !"
     // clearans4()
-    timer-=10
+    timer -= 10
 }
 
 function correct4() {
@@ -153,7 +153,7 @@ function wrong5() {
     console.log("wrong!")
     ans5.innerHTML = "Wrong Answer !"
     // clearans5()
-    timer-=10
+    timer -= 10
 }
 
 function correct5() {
@@ -212,13 +212,13 @@ function goBack() {
     cont0.style.display = "block"
     points = 0;
     input.value = '';
-   
+
     // console.log(flag)
     ans1.innerHTML = ''
     ans2.innerHTML = ''
     ans3.innerHTML = ''
     ans4.innerHTML = ''
-    timer=50
+    timer = 50
     clearInterval(intervalId)
 }
 
@@ -245,7 +245,7 @@ submit.addEventListener('click', () => {
     }
 })
 
-startBtn.addEventListener('click' , startBtnFun)
+startBtn.addEventListener('click', startBtnFun)
 startBtn.addEventListener('click', startTime);
 
 function startBtnFun() {
@@ -286,17 +286,18 @@ function funcDone() {
 }
 
 
-let timer=50;
+let timer = 50;
 let intervalId;
 
-function startTime(){
-    intervalId= setInterval(() => {
-    updateTime()}, 1000);
+function startTime() {
+    intervalId = setInterval(() => {
+        updateTime()
+    }, 1000);
 }
-function updateTime(){
-if (timer === 0)
-    funcDone();
-time.innerText= timer--;
+function updateTime() {
+    if (timer === 0)
+        funcDone();
+    time.innerText = timer--;
 }
 
 const totalScore = document.getElementById("ScoreLine")
@@ -305,9 +306,9 @@ const totalScore = document.getElementById("ScoreLine")
 
 const btn5 = document.getElementById("btn5")
 
-btn5.addEventListener('click' , displayTotalScore)
+btn5.addEventListener('click', displayTotalScore)
 
-function displayTotalScore (){
+function displayTotalScore() {
     // updateTime()
     totalScore.innerText = `Your final score is: ${points}`
 }
