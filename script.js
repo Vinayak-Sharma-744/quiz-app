@@ -295,7 +295,7 @@ function startTime() {
     }, 1000);
 }
 function updateTime() {
-    if (timer === 0)
+    if (timer <= 0)
         funcDone();
     time.innerText = timer--;
 }
